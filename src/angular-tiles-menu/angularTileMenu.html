@@ -1,0 +1,17 @@
+    <div class="tl__window is__delay--1 col-xs-12 col-padding--no" >
+        <div tile-menu-slider class="tl__slider  is__fadeout" ng-swipe-left="handleSlide($event, 'left')" ng-swipe-right="handleSlide($event, 'right')" ng-model="model.slider" style="width:{{panelWidth}}px; left:{{panelLeft}}px" ng-class="{'is__fadein' : showfooter}">
+
+            <div class="tl__panel col-padding--no col-xs-12 col-sm-{{12/panels.length}}" ng-repeat="panel in panels" info="panel">
+                <div class="tl__box tl__box--{{link.size}} col-xs-{{tileHalf(link.size)}} col-sm-{{tileFloor(link.size)}}" ng-repeat="link in panel track by $index" >
+                    <div class="tl__link" style="color:{{link.color}}">
+                        <span class="tl__label">
+                            {{link.title}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="tl__propagator is__fadeout is__delay--1 col-xs-12" ng-if="panels.length > 0" ng-class="{'is__fadein' : showfooter}">
+        <span class="tl__propagation" ng-repeat="panel in panels track by $index" ng-class="{'tl__propagation--current' : $index == current }" ng-click="clickSlide($event, $index)"></span>
+    </footer>
