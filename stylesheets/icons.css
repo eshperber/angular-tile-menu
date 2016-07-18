@@ -1,0 +1,101 @@
+/* Custom templatse */
+
+@font-face {
+	font-family:"ico";
+	src: url("../icons/ico.eot?a8ea1f41839bfbb322a04226067b3bc8");
+	src: url("../icons/ico.eot?#iefix") format("embedded-opentype"),
+		url("../icons/ico.woff?a8ea1f41839bfbb322a04226067b3bc8") format("woff"),
+		url("../icons/ico.ttf?a8ea1f41839bfbb322a04226067b3bc8") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+	}
+
+.ico {
+	display:inline-block;
+	font-style:normal;
+	speak:none;
+	-webkit-font-smoothing:antialiased;
+	}	
+	.ico:before {
+		font-family:"ico";
+	}
+
+/* Icons */
+.ico--add:before { content:"\e023"; }
+.ico--adduser:before { content:"\e016"; }
+.ico--addusers:before { content:"\e019"; }
+.ico--approve:before { content:"\e032"; }
+.ico--arrowdown:before { content:"\e005"; }
+.ico--arrowleft:before { content:"\e003"; }
+.ico--arrowright:before { content:"\e001"; }
+.ico--arrowup:before { content:"\e004"; }
+.ico--assets:before { content:"\e031"; }
+.ico--attach:before { content:"\e050"; }
+.ico--calendar:before { content:"\e049"; }
+.ico--check:before { content:"\e025"; }
+.ico--checkall:before { content:"\e020"; }
+.ico--checkmark:before { content:"\e021"; }
+.ico--combine:before { content:"\e040"; }
+.ico--disable:before { content:"\e022"; }
+.ico--disableuser:before { content:"\e017"; }
+.ico--down:before { content:"\e043"; }
+.ico--download:before { content:"\e006"; }
+.ico--drag:before { content:"\e039"; }
+.ico--edit:before { content:"\e014"; }
+.ico--ex:before { content:"\e009"; }
+.ico--experience:before { content:"\e026"; }
+.ico--export:before { content:"\e041"; }
+.ico--filter:before { content:"\e030"; }
+.ico--getuser:before { content:"\e015"; }
+.ico--groups:before { content:"\e027"; }
+.ico--hide:before { content:"\e047"; }
+.ico--important:before { content:"\e052"; }
+.ico--insert:before { content:"\e035"; }
+.ico--layers:before { content:"\e034"; }
+.ico--left:before { content:"\e044"; }
+.ico--lineedit:before { content:"\e036"; }
+.ico--list:before { content:"\e038"; }
+.ico--mail:before { content:"\e048"; }
+.ico--menu:before { content:"\e037"; }
+.ico--minus:before { content:"\e010"; }
+.ico--module:before { content:"\e046"; }
+.ico--plus:before { content:"\e008"; }
+.ico--presentations:before { content:"\e028"; }
+.ico--remove:before { content:"\e024"; }
+.ico--removeuser:before { content:"\e018"; }
+.ico--right:before { content:"\e045"; }
+.ico--search:before { content:"\e011"; }
+.ico--settings:before { content:"\e012"; }
+.ico--show:before { content:"\e013"; }
+.ico--timesheet:before { content:"\e033"; }
+.ico--trash:before { content:"\e051"; }
+.ico--up:before { content:"\e042"; }
+.ico--upload:before { content:"\e007"; }
+.ico--user:before { content:"\e029"; }
+
+
+
+.ico--xs {
+    font-size: 16px;
+}
+.ico--sm {
+    font-size: 20px;
+}
+.ico--md {
+    font-size: 24px;
+}
+.ico--lg {
+    font-size: 28px;
+}
+.ico--xl {
+    font-size: 32px;
+}
+.ico--center:before {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.ico--selectedCerulean:before {
+    color: #00adef;
+}

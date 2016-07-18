@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Tile Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="stylesheets/bootstrap.css"> 
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/angular-touch/angular-touch.js"></script>
+    <script src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="libs/angular-animate/angular-animate.min.js"></script>
+    <!-- <script src="libs/lodash/lodash.js"></script> -->
+
+    <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+    
+    <!-- ANGULAR CUSTOM -->
+    <!-- directives -->
+    <script src="libs/angular-tiles-menu/angular-tiles-menu.js"></script>
+
+    <!-- angular app -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/controllers.js"></script>
+</head>
+<body ng-app="portList" ng-controller="PortfolioController">
+<section class="container-fluid col-padding--no">
+    <!-- HEADER -->
+    <div class="row-fluid">
+       
+        <!-- ANGULAR DYNAMIC CONTENT -->
+        <main ng-view class="col-xs-12 view-animate is__page"></main>
+    </div>
+</section>
+
+</body>
+</html>

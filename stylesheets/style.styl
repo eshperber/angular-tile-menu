@@ -1,0 +1,94 @@
+@import "icons.css"
+@import "mixing.styl"
+
+body 
+	font-family 'Open Sans', sans-serif
+	background-color $tin
+a
+	color  $tundora
+	text-decoration none
+	&:hover, &:active
+		color gray
+		text-decoration none
+
+
+*:focus, *:active
+	outline none !important
+	box-shadow none !important
+	
+h1
+	font-size 3.2rem
+h2
+	font-size 2.8rem
+h3
+	font-size 2.4rem
+h4
+	font-size 2rem
+h5
+	font-size 1.6rem
+
+[class^="col-"]
+	float left
+
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+//mixin 
+//enter leave
+
+
+// typography
+.is
+	&__title
+		&--main
+			color $darkblue
+			font-weight 100
+			line-height .5em
+			border-bottom 1px solid $redlight
+			display inline-block
+			padding 0 30px 5px 30px
+			margin 0.7em auto 1.4em
+		&--sub
+			color $bluelight
+			font-weight 100
+		&--section
+			margin 0 0 0.5em 0
+			color $bluelight
+
+
+	&__fadeout
+		opacity 0
+		height 0
+		transition opacity 0.5s ease-in
+	&__fadein
+		opacity 1
+		height auto
+		transition opacity 0.5s ease-in
+	&__delay
+		&--1
+			transition-delay 1s
+		&--05
+			transition-delay 0.5s
+		&--025
+			transition-delay 0.25s
+		
+@keyframes fadeIn {
+    from    { opacity:0 }
+    to      { opacity:1 }
+}
+
+/* slide in from the bottom */
+@keyframes fadeOut{
+	from    { opacity:1 }
+    to      { opacity:0 }
+}
+
+// grid extension
+.col
+	&-padding
+		&--no
+			padding-left 0 !important
+			padding-right 0 !important
+
+@import "tiles.styl"
